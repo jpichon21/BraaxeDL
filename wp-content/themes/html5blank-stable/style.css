@@ -73,6 +73,9 @@ li {
 body {
   background-image: url("img/content/bg.jpg") !important;
   background-size: cover !important; }
+  @media (max-width: 768px) {
+    body {
+      background-image: url("img/content/mobile-bg.jpg") !important; } }
 
 a.active,
 a:active,
@@ -114,6 +117,11 @@ p strong {
   font-family: benton-sans, sans-serif;
   font-weight: bold !important; }
 
+@media (max-width: 1024px) {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    width: 100% !important;
+    padding: 0px 10vw; } }
+
 .button {
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -144,12 +152,13 @@ p strong {
   #infosForm h2 {
     font-family: benton-sans, sans-serif;
     color: #1034bf;
-    font-size: 3.4rem;
-    margin-bottom: 4.8rem; }
+    font-size: 3.3rem;
+    margin-bottom: 4.8rem;
+    font-weight: 600; }
   #infosForm .form label {
     font-family: benton-sans, sans-serif;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #000000; }
   @media (max-width: 1024px) {
     #infosForm .form {
@@ -168,7 +177,7 @@ p strong {
     text-align: right;
     color: #fff !important;
     margin-top: 1.6rem; }
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       #infosForm .wpcf7-response-output {
         text-align: center;
         color: #000000 !important; } }
@@ -205,6 +214,13 @@ p strong {
       outline: none;
       background-color: #fff;
       width: 100%; }
+    #infosForm form select {
+      padding: 1.2rem 2rem;
+      font-family: benton-sans, sans-serif; }
+    #infosForm form select {
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: ''; }
     #infosForm form input[type=submit] {
       margin-top: 2.8rem;
       background-color: #000000;
@@ -232,22 +248,29 @@ p strong {
   #infosForm ul {
     margin-bottom: 5.2rem; }
   #infosForm .content {
-    padding: 18vh 0vh; }
+    padding: 22vh 0vh; }
+    @media (max-width: 1024px) {
+      #infosForm .content {
+        padding: 16vh 0vh; } }
   #infosForm h1 {
     font-size: 6.1rem;
-    line-height: 7.1rem; }
+    line-height: 7.1rem;
+    margin-bottom: 1rem; }
     #infosForm h1 span {
       font-size: 8.1rem; }
   #infosForm h3 {
     font-size: 2.5rem;
     margin-top: 22.2rem; }
+    @media (max-width: 1024px) {
+      #infosForm h3 {
+        margin-top: 2vh; } }
   #infosForm p {
     font-size: 1.9rem;
     line-height: 2.2rem;
     font-family: benton-sans, sans-serif; }
   #infosForm li {
     font-size: 1.7rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.4rem;
     position: relative;
     padding-left: 2.6rem;
     margin-top: 0rem !important; }
