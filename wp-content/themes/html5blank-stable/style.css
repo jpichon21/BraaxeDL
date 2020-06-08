@@ -1,0 +1,278 @@
+/*******BREAKPOINTS********/
+/*******VARIABLES*********/
+/*********FONTS*******/
+@font-face {
+  font-family: 'Tiempos Headline Bold Italic';
+  src: url("../html5blank-stable/fonts/TiemposHeadline-BoldItalic.ttf") format("ttf"), url("../html5blank-stable/fonts/TiemposHeadline-BoldItalic.otf") format("otf"), url("../html5blank-stable/fonts/TiemposHeadline-BoldItalic.woff") format("woff"), url("../html5blank-stable/fonts/TiemposHeadline-BoldItalic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'Tiempos Headline Regular Italic';
+  src: url("../html5blank-stable/fonts/TiemposHeadline-RegularItalic.ttf") format("ttf"), url("../html5blank-stable/fonts/TiemposHeadline-RegularItalic.otf") format("otf"), url("../html5blank-stable/fonts/TiemposHeadline-RegularItalic.woff") format("woff"), url("../html5blank-stable/fonts/TiemposHeadline-RegularItalic.woff2") format("woff2"); }
+
+/** BASE **/
+a {
+  box-shadow: none !important; }
+
+html {
+  -ms-overflow-style: none;
+  /* IE 11 */
+  scrollbar-width: none;
+  /* Firefox 64 */ }
+
+html::-webkit-scrollbar {
+  display: none; }
+
+* {
+  box-sizing: border-box; }
+
+body,
+a,
+p,
+span,
+li {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto; }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 63.5% !important; }
+  @media (max-width: 1440px) {
+    html {
+      font-size: 55.5% !important; } }
+  @media (min-width: 1780px) {
+    html {
+      font-size: 76.5% !important; } }
+
+* {
+  box-sizing: border-box; }
+
+body,
+a,
+p,
+span,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-family: benton-sans, sans-serif; }
+
+.hidden {
+  display: none !important; }
+
+ul,
+a,
+li {
+  text-decoration: none;
+  list-style-type: none; }
+
+body {
+  background-image: url("img/content/bg.jpg") !important;
+  background-size: cover !important; }
+
+a.active,
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none !important;
+  cursor: pointer; }
+
+.header.clear {
+  display: none; }
+
+.centered {
+  margin: 0 auto !important; }
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.center-text {
+  text-align: center; }
+
+.white {
+  color: #fff; }
+  .white a:visited,
+  .white a:focus,
+  .white a:active,
+  .white a:hover {
+    color: #fff; }
+
+.darkblue {
+  color: #3b4351; }
+
+h1,
+h3,
+strong {
+  color: #000000 !important; }
+
+p strong {
+  font-family: benton-sans, sans-serif;
+  font-weight: bold !important; }
+
+.button {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 1.6rem 4rem;
+  border-radius: 4px;
+  font-family: benton-sans, sans-serif;
+  display: inline-block; }
+  .button.black-button {
+    background-color: #000000;
+    color: #fff;
+    transition: 0.5s ease; }
+    .button.black-button:active, .button.black-button:hover,
+    .button.black-button a:focus {
+      background-color: #f4f4f4;
+      color: #1034bf;
+      transition: 0.5s ease; }
+
+#logoContainer {
+  position: absolute; }
+  #logoContainer #headerLogo {
+    max-width: 18.5rem;
+    max-height: 5.0rem;
+    margin: 2.9rem 2.4rem; }
+
+#infosForm {
+  min-height: 100vh;
+  background-size: cover; }
+  #infosForm h2 {
+    font-family: benton-sans, sans-serif;
+    color: #1034bf;
+    font-size: 3.4rem;
+    margin-bottom: 4.8rem; }
+  #infosForm .form label {
+    font-family: benton-sans, sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #000000; }
+  @media (max-width: 1024px) {
+    #infosForm .form {
+      margin-top: 6.4rem; } }
+  @media (max-width: 435px) {
+    #infosForm .col-6 {
+      width: 100%; } }
+  #infosForm div.wpcf7-validation-errors,
+  #infosForm div.wpcf7-acceptance-missing,
+  #infosForm div.wpcf7-mail-sent-ok {
+    border: none;
+    font-size: 1.6rem; }
+  #infosForm .wpcf7-response-output {
+    margin: 0 auto;
+    width: 100%;
+    text-align: right;
+    color: #fff !important;
+    margin-top: 1.6rem; }
+    @media (max-width: 768px) {
+      #infosForm .wpcf7-response-output {
+        text-align: center;
+        color: #000000 !important; } }
+  #infosForm .wpcf7 {
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  @media (max-width: 1024px) {
+    #infosForm .col-6,
+    #infosForm .col-5 {
+      width: 100%; } }
+  #infosForm form {
+    padding-top: 2.8rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem; }
+    @media (max-width: 1024px) {
+      #infosForm form .col-6,
+      #infosForm form .col-12 {
+        margin-bottom: 1.8rem; } }
+    #infosForm form .row {
+      margin-bottom: 1rem; }
+      @media (max-width: 1024px) {
+        #infosForm form .row {
+          margin-bottom: 0rem; } }
+    #infosForm form textarea,
+    #infosForm form input[type=submit] {
+      width: 100%; }
+    #infosForm form textarea,
+    #infosForm form input[type=submit],
+    #infosForm form input,
+    #infosForm form select {
+      border: 1px solid #000000;
+      padding: 1rem 2rem;
+      outline: none;
+      background-color: #fff;
+      width: 100%; }
+    #infosForm form input[type=submit] {
+      margin-top: 2.8rem;
+      background-color: #000000;
+      color: #fff;
+      transition: 0.5s ease;
+      font-family: benton-sans, sans-serif;
+      font-weight: 700;
+      font-size: 1.9rem;
+      padding: 1.6rem;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      margin-bottom: 3.0rem; }
+    #infosForm form .form-separator {
+      border-top: 1px solid #cccccc;
+      width: 100%;
+      margin-top: 3.2rem;
+      height: 3.2rem; }
+  #infosForm h1,
+  #infosForm h3 {
+    font-family: 'Tiempos Headline Bold Italic', sans-serif; }
+    #infosForm h1 span,
+    #infosForm h3 span {
+      font-family: 'Tiempos Headline Bold Italic', sans-serif; }
+  #infosForm ul {
+    margin-bottom: 5.2rem; }
+  #infosForm .content {
+    padding: 18vh 0vh; }
+  #infosForm h1 {
+    font-size: 6.1rem;
+    line-height: 7.1rem; }
+    #infosForm h1 span {
+      font-size: 8.1rem; }
+  #infosForm h3 {
+    font-size: 2.5rem;
+    margin-top: 22.2rem; }
+  #infosForm p {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    font-family: benton-sans, sans-serif; }
+  #infosForm li {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-top: 0rem !important; }
+    #infosForm li:before {
+      content: '';
+      margin-top: 0.6rem;
+      display: inline-block;
+      background-image: url("img/icons/dot.png") !important;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: 0;
+      left: 0; }
+  #infosForm p {
+    margin-top: 3.2rem; }
+  #infosForm .logos {
+    text-align: center; }
+    #infosForm .logos .logo-container {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0rem 0.8rem; }
+      #infosForm .logos .logo-container img {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; }

@@ -1,0 +1,398 @@
+@import 'include-media.scss';
+
+/*******BREAKPOINTS********/
+$breakpoints: (small: 0px, xsmall: 345px, mobile: 435px, tablet: 768px, large: 1024px, xlarge: 1280px, cardbkp: 1298px, xxlarge: 1440px, footerbkp: 1680px, hirez: 1780px);
+
+/*******VARIABLES*********/
+$color-darkblue: #1034bf;
+
+/*********FONTS*******/
+
+
+@font-face {
+    font-family: 'Tiempos Headline Bold Italic';
+    src:
+        url('../html5blank-stable/fonts/TiemposHeadline-BoldItalic.ttf') format('ttf'),
+        url('../html5blank-stable/fonts/TiemposHeadline-BoldItalic.otf') format('otf'),
+        url('../html5blank-stable/fonts/TiemposHeadline-BoldItalic.woff') format('woff'),
+        url('../html5blank-stable/fonts/TiemposHeadline-BoldItalic.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Tiempos Headline Regular Italic';
+    src:
+        url('../html5blank-stable/fonts/TiemposHeadline-RegularItalic.ttf') format('ttf'),
+        url('../html5blank-stable/fonts/TiemposHeadline-RegularItalic.otf') format('otf'),
+        url('../html5blank-stable/fonts/TiemposHeadline-RegularItalic.woff') format('woff'),
+        url('../html5blank-stable/fonts/TiemposHeadline-RegularItalic.woff2') format('woff2');
+}
+
+
+/** BASE **/
+
+a{
+    box-shadow: none!important;
+}
+html {
+    -ms-overflow-style: none;
+    /* IE 11 */
+    scrollbar-width: none;
+    /* Firefox 64 */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+a,
+p,
+span,
+li {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 63.5% !important;
+
+    @include media('<=xxlarge') {
+        font-size: 55.5% !important;
+    }
+
+    @include media('>=hirez') {
+        font-size: 76.5% !important;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+a,
+p,
+span,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+    font-family: benton-sans, sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+ul,
+a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-image: url('img/content/bg.jpg') !important;
+    background-size: cover !important;
+}
+
+a.active,
+a:active,
+a:focus,
+a:hover {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.header.clear {
+    display: none;
+}
+
+.centered {
+    margin: 0 auto !important;
+}
+
+.container {
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+.center-text {
+    text-align: center;
+}
+
+.white {
+    color: #fff;
+
+    a:visited,
+    a:focus,
+    a:active,
+    a:hover {
+        color: #fff;
+    }
+}
+
+.darkblue {
+    color: #3b4351;
+}
+
+h1,
+h3,
+strong {
+    color: #000000 !important;
+}
+
+p {
+    strong {
+        font-family: benton-sans, sans-serif;
+        font-weight: bold !important;
+    }
+}
+
+.button {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1.6rem 4rem;
+    border-radius: 4px;
+    font-family: benton-sans, sans-serif;
+    display: inline-block;
+
+    &.black-button {
+        background-color: #000000;
+        color: #fff;
+        transition: 0.5s ease;
+
+        &:active,
+        &:hover,
+        a:focus {
+            background-color: #f4f4f4;
+            color: $color-darkblue;
+            transition: 0.5s ease;
+        }
+    }
+}
+
+#logoContainer {
+    position: absolute;
+
+    #headerLogo {
+        max-width: 18.5rem;
+        max-height: 5.0rem;
+        margin: 2.9rem 2.4rem;
+    }
+}
+
+#infosForm {
+    h2 {
+        font-family: benton-sans, sans-serif;
+        color: $color-darkblue;
+        font-size: 3.4rem;
+        margin-bottom: 4.8rem;
+    }
+
+    .form {
+        label {
+            font-family: benton-sans, sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: #000000;
+        }
+
+        @include media('<=large') {
+            margin-top: 6.4rem;
+        }
+    }
+
+    .col-6 {
+        @include media('<=mobile') {
+            width: 100%;
+        }
+    }
+
+    div.wpcf7-validation-errors,
+    div.wpcf7-acceptance-missing,
+    div.wpcf7-mail-sent-ok {
+        border: none;
+        font-size: 1.6rem;
+    }
+
+    .wpcf7-response-output {
+        margin: 0 auto;
+        width: 100%;
+        text-align: right;
+        color: #fff !important;
+        margin-top: 1.6rem;
+
+        @include media('<=tablet') {
+            text-align: center;
+            color: #000000 !important;
+        }
+
+    }
+
+    .wpcf7 {
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .col-6,
+    .col-5 {
+        @include media('<=large') {
+            width: 100%;
+        }
+    }
+
+    form {
+        padding-top: 2.8rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+
+        .col-6,
+        .col-12 {
+            @include media('<=large') {
+                margin-bottom: 1.8rem;
+            }
+        }
+
+        .row {
+            margin-bottom: 1rem;
+
+            @include media('<=large') {
+                margin-bottom: 0rem;
+            }
+        }
+
+        textarea,
+        input[type=submit] {
+            width: 100%;
+        }
+
+        textarea,
+        input[type=submit],
+        input,
+        select {
+            border: 1px solid #000000;
+            padding: 1rem 2rem;
+            outline: none;
+            background-color: #fff;
+            width: 100%;
+        }
+
+        input[type=submit] {
+            margin-top: 2.8rem;
+            background-color: #000000;
+            color: #fff;
+            transition: 0.5s ease;
+            font-family: benton-sans, sans-serif;
+            font-weight: 700;
+            font-size: 1.9rem;
+            padding: 1.6rem;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            margin-bottom: 3.0rem;
+        }
+
+        .form-separator {
+            border-top: 1px solid #cccccc;
+            width: 100%;
+            margin-top: 3.2rem;
+            height: 3.2rem;
+        }
+    }
+
+    min-height: 100vh;
+    background-size: cover;
+
+    h1,
+    h3 {
+        font-family: 'Tiempos Headline Bold Italic', sans-serif;
+
+        span {
+            font-family: 'Tiempos Headline Bold Italic', sans-serif;
+        }
+    }
+
+    ul {
+        margin-bottom: 5.2rem;
+    }
+
+    .content {
+        padding: 18vh 0vh;
+    }
+
+    h1 {
+        font-size: 6.1rem;
+        line-height: 7.1rem;
+
+        span {
+            font-size: 8.1rem;
+        }
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        margin-top: 22.2rem;
+    }
+
+    p {
+        font-size: 1.9rem;
+        line-height: 2.2rem;
+        font-family: benton-sans, sans-serif;
+    }
+
+    li {
+        font-size: 1.7rem;
+        margin-bottom: 1.2rem;
+        position: relative;
+        padding-left: 2.6rem;
+        margin-top: 0rem !important;
+
+        &:before {
+            content: '';
+            margin-top: 0.6rem;
+            display: inline-block;
+            background-image: url('img/icons/dot.png') !important;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    p {
+        margin-top: 3.2rem;
+    }
+
+    .logos {
+        text-align: center;
+
+        .logo-container {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0rem 0.8rem;
+
+            img {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
