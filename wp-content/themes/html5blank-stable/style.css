@@ -72,10 +72,12 @@ li {
 
 body {
   background-image: url("img/content/bg2.jpg") !important;
-  background-size: cover !important; }
+  background-size: cover !important;
+  background-position-x: right !important; }
   @media (max-width: 768px) {
     body {
-      background-image: url("img/content/mobile-bg.jpg") !important; } }
+      background-image: url("img/content/mobile-bg.jpg") !important;
+      background-position-x: unset !important; } }
 
 a.active,
 a:active,
@@ -153,7 +155,7 @@ p strong {
 #logoContainer {
   position: absolute; }
   #logoContainer #headerLogo {
-    max-width: 18.5rem;
+    max-width: 12rem;
     max-height: 5.0rem;
     margin: 2.9rem 2.4rem; }
 
@@ -163,7 +165,7 @@ p strong {
   #infosForm h2 {
     font-family: benton-sans, sans-serif;
     color: #1034bf;
-    font-size: 3.3rem;
+    font-size: 3.0rem;
     margin-bottom: 4.8rem;
     font-weight: 600; }
   #infosForm .dots {
@@ -301,7 +303,7 @@ p strong {
       #infosForm h3 {
         margin-top: 2vh; } }
   #infosForm p {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
     font-family: benton-sans, sans-serif; }
   #infosForm li {

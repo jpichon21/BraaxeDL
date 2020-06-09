@@ -107,9 +107,11 @@ li {
 body {
     background-image: url('img/content/bg2.jpg') !important;
     background-size: cover !important;
+    background-position-x: right!important;
 
     @include media('<=tablet') {
         background-image: url('img/content/mobile-bg.jpg') !important;
+        background-position-x: unset!important;
     }
 
 }
@@ -212,7 +214,7 @@ p {
     position: absolute;
 
     #headerLogo {
-        max-width: 18.5rem;
+        max-width: 12rem;
         max-height: 5.0rem;
         margin: 2.9rem 2.4rem;
     }
@@ -222,7 +224,7 @@ p {
     h2 {
         font-family: benton-sans, sans-serif;
         color: $color-darkblue;
-        font-size: 3.3rem;
+        font-size: 3.0rem;
         margin-bottom: 4.8rem;
         font-weight: 600;
     }
@@ -426,7 +428,7 @@ p {
     }
 
     p {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         line-height: 2.2rem;
         font-family: benton-sans, sans-serif;
     }
