@@ -71,7 +71,7 @@ li {
   list-style-type: none; }
 
 body {
-  background-image: url("img/content/bg.jpg") !important;
+  background-image: url("img/content/bg2.jpg") !important;
   background-size: cover !important; }
   @media (max-width: 768px) {
     body {
@@ -118,7 +118,18 @@ p strong {
   font-weight: bold !important; }
 
 @media (max-width: 1024px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
     width: 100% !important;
     padding: 0px 10vw; } }
 
@@ -155,6 +166,10 @@ p strong {
     font-size: 3.3rem;
     margin-bottom: 4.8rem;
     font-weight: 600; }
+  #infosForm .dots {
+    font-family: 'Tiempos Headline Bold Italic', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem; }
   #infosForm .form label {
     font-family: benton-sans, sans-serif;
     font-weight: 800;
@@ -170,7 +185,25 @@ p strong {
   #infosForm div.wpcf7-acceptance-missing,
   #infosForm div.wpcf7-mail-sent-ok {
     border: none;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    background-color: #ff63e1;
+    width: 300px;
+    text-align: left;
+    border-radius: 7px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 12px;
+    color: #fff !important; }
+    @media (max-width: 435px) {
+      #infosForm div.wpcf7-validation-errors,
+      #infosForm div.wpcf7-acceptance-missing,
+      #infosForm div.wpcf7-mail-sent-ok {
+        bottom: 52px;
+        top: unset;
+        left: auto;
+        right: 10%; } }
   #infosForm .wpcf7-response-output {
     margin: 0 auto;
     width: 100%;
@@ -252,6 +285,9 @@ p strong {
     @media (max-width: 1024px) {
       #infosForm .content {
         padding: 16vh 0vh; } }
+    @media (max-width: 768px) {
+      #infosForm .content {
+        position: relative; } }
   #infosForm h1 {
     font-size: 6.1rem;
     line-height: 7.1rem;

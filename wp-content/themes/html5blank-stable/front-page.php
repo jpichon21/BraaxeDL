@@ -10,14 +10,19 @@
 
     <div id="logoContainer">
         <?php $headerlogo = get_field('logo', 'options'); ?>
-        <a href="#"><img id="headerLogo" src="<?php echo esc_url($headerlogo['url']); ?>"
+        <a href="https://braaxe.com/"><img id="headerLogo" src="<?php echo esc_url($headerlogo['url']); ?>"
                 alt="<?php echo esc_attr($headerlogo['alt']); ?>" /></a>
     </div>
 
-    <div class="content col-9 centered">
+    <div class="content col-12 centered">
+
+
 
         <div class="columns">
-            <div class="col-7 text">
+
+        <div class="col-1 gutter"></div>
+        
+            <div class="col-6 text">
                 <?php $infos = get_field('demande_infos');?>
 
                 <h1><?php echo $infos['titre']; ?></h1>
@@ -25,8 +30,9 @@
                 <ul>
                     <li> <?php echo $infos['element_1']; ?> </li>
                     <li> <?php echo $infos['element_2']; ?> </li>
-                    <li> <?php echo $infos['element_3']; ?> </li>
+                    <li> <?php echo $infos['element_3']; ?> <br><span class="dots">...</span></li>
                 </ul>
+                
 
 
                 <h3><?php echo $infos['titre_2']; ?></h3>
@@ -45,9 +51,11 @@
 
             <div class="col-1 gutter"></div>
 
-            <div class="col-4 form form-container">
+            <div class="col-3 form form-container">
                 <?php echo get_field('contact_form_2'); ?>
+           
             </div>
+
 
         </div>
     </div>

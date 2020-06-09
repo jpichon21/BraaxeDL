@@ -21,13 +21,13 @@ define('WP_AUTO_UPDATE_CORE', 'minor');// This setting is required to make sure 
 
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wp-horizon' );
+define( 'DB_NAME', 'braaxedl' );
 
 /** MySQL database username */
-define( 'DB_USER', 'user' );
+define( 'DB_USER', 'wp-admin' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'OjF9GBHPtxEy*iiy' );
+define( 'DB_PASSWORD', 'Wt5v7#u3' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost:3306' );
@@ -62,7 +62,7 @@ define('NONCE_SALT', '1[1o/IAa85Pj@7[2DH/9p*~m7vSt+7@K&To(3anc3WFZ]:-F~pG#jhk:r5
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'tR6ea5zfj_';
+$table_prefix = 'wp_';
 
 
 define('WP_ALLOW_MULTISITE', true);
